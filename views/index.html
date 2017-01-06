@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>怀宇信息</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="{{.Description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css" id="color-switcher-link">
+    <link rel="stylesheet" href="/static/css/animations.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QWtux7hgRC1jSfPXHVCwjIxkkIzHOLjW"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/static/js/vendor/html5shiv.min.js"></script>
+    <script src="/static/js/vendor/respond.min.js"></script>
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+<div class="preloader">
+    <div class="preloader_image"></div>
+</div>
+
+
+<!-- search modal -->
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+    <div class="widget widget_search">
+        <form method="get" class="searchform form-inline" action="/">
+            <div class="form-group">
+                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+            </div>
+            <button type="submit" class="theme_button">Search</button>
+        </form>
+    </div>
+</div>
+
+<!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+    <div id="box_wrapper">
+
+        <!-- template sections -->
+
+        <section class="page_topline ds ms columns_margin_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-center text-sm-left">
+                        <p class="fontsize_12 grey">
+                            <i class="flaticon-clock"></i> 营业时间: 周一 - 周五 8.00 - 18.00</p>
+                    </div>
+                    <div class="col-sm-6 text-center text-sm-right">
+                        <div class="grey fontsize_12">关注我们:
+                            <div class="page_social_icons inline-block darklinks">
+                                <a class="social-icon soc-facebook" href="index.html#" title="Facebook"></a>
+                                <a class="social-icon soc-twitter" href="index.html#" title="Twitter"></a>
+                                <a class="social-icon soc-google" href="index.html#" title="Google"></a>
+                                <a class="social-icon soc-linkedin" href="index.html#" title="LinkedIn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page_toplogo ds table_section section_padding_25 columns_margin_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 text-center text-sm-left">
+                        <a href="index.html" class="logo">
+                            <img src="/static//static/images/baoan_logo.png" alt="" style="width: 60px;">
+                            <p style="color:#F0C301;font-size: 24px; margin-top: 10px;">怀宇信息</p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-8 text-right hidden-xs darklinks">
+                        <div class="teaser media inline-block">
+                            <div class="media-left media-middle">
+                                <div class="teaser_icon border_icon fontsize_20 highlight">
+                                    <i class="flaticon-paper-plane"></i>
+                                </div>
+                            </div>
+                            <div class="media-body media-middle text-left">
+                                <p class="bold fontsize_20 grey bottommargin_5">0755-83405700</p>
+                                <p>598228712@qq.com</p>
+                            </div>
+                        </div>
+                        <a class="teaser location-teaser media inline-block hidden-sm hidden-xs" href="index.html#">
+                            <div class="media-left media-middle">
+                                <div class="teaser_icon border_icon fontsize_20 highlight">
+                                    <i class="flaticon-signs"></i>
+                                </div>
+                            </div>
+                            <div class="media-body media-middle text-left">
+                                <p class="bold fontsize_20 bottommargin_5">华创达文化科技产业园F座506</p>
+                                <p class="fontcolor">广东省深圳市宝安区49区翻身路与海汇路交汇处</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header class="page_header theme_header cs">
+            <div class="container">
+                <div class="row mainrow">
+                    <div class="col-md-9">
+                        <!-- main nav start -->
+                        <nav class="mainmenu_wrapper">
+                            <ul class="mainmenu nav sf-menu">
+                                <li class="active">
+                                    <a href="index.html">首页</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">企业</a>
+                                    <ul>
+                                        <li>
+                                            <a href="about.html">企业介绍</a>
+                                        </li>
+                                        <li>
+                                            <a href="departments.html">部门介绍</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="products.html">业务</a>
+                                    <ul>
+                                        <li>
+                                            <a href="commercial_equipment.html">工程</a>
+                                        </li>
+                                        <li>
+                                            <a href="commercial_equipment.html">维护</a>
+                                        </li>
+                                        <li>
+                                            <a href="commercial_equipment.html">游戏</a>
+                                        </li>
+                                        <li>
+                                            <a href="commercial_equipment.html">软件开发</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="gallery-regular-4-cols.html">资质</a>
+
+                                </li>
+
+                                <li>
+                                    <a href="gallery-fullwidth-4-cols.html">案例</a>
+
+                                </li>
+
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+
+                                </li>
+
+                                <li>
+                                    <a href="contact2.html">联系我们</a>
+
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <!-- eof main nav -->
+                        <span class="toggle_menu">
+								<span></span>
+							</span>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <ul class="inline-dropdown inline-block">
+
+                            <li class="dropdown">
+                                <div class="search_form_trigger header-button">
+                                    <i class="flaticon-magnifying-glass"></i>
+                                </div>
+                            </li>
+
+                            <li class="dropdown login-dropdown">
+
+                                <a class="header-button" id="login" data-target="#" href="index.html" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                                    <i class="flaticon-social"></i>
+                                </a>
+
+                                <div class="dropdown-menu ls" aria-labelledby="login">
+                                    <form role="form" action="/">
+
+                                        <div class="form-group">
+                                            <label for="login_email" class="sr-only">邮箱</label>
+                                            <input type="email" class="form-control" id="login_email" placeholder="输入邮箱">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="login_password" class="sr-only">密码</label>
+                                            <input type="password" class="form-control" id="login_password" placeholder="密码">
+                                        </div>
+                                        <div class="fontsize_12 darklinks">
+                                            <a href="register.html">忘记密码</a>
+                                            <span class="pull-right nowrap">
+													<input type="checkbox" id="remember-me">
+													<label for="remember-me">记住我
+													</label>
+												</span>
+                                        </div>
+                                        <div class="text-center topmargin_15">
+                                            <button type="button" class="theme_button color1 margin_0">
+                                                登录
+                                            </button>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="index.html#" class="header-button">
+                                    <i class="flaticon-phone-call"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row searchrow">
+                    <div class="col-sm-12 text-right">
+                        <div class="widget_search">
+                            <form method="get" class="searchform form-inline" action="/">
+                                <div class="form-group">
+                                    <label class="sr-only" for="headeer-widget-search">Search for:</label>
+                                    <input id="headeer-widget-search" type="text" value="" name="search" class="form-control" placeholder="输入并确定">
+                                </div>
+                                <button type="submit" class="theme_button">Search</button>
+                            </form>
+                        </div>
+                        <div class="search_form_close">
+                            <i class="flaticon-cancel"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="intro_section page_mainslider ds">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="/static/images/slide01.jpg" alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="slideExpandUp">
+                                                <div class="cornered-block">
+                                                    <p class="grey fontsize_20 text-uppercase">
+                                                        作为信息工程科技公司
+                                                    </p>
+                                                    <p class="big grey raleway text-uppercase bold">
+                                                        专业，诚信，共赢
+                                                    </p>
+                                                    <p class="grey fontsize_16">
+                                                        以高新技术与品牌打造企业，我们有着专业的团队和成熟的技术，立志成为行业的领头兵。我们本着“求实、高效、创新”的团队精神参与到激烈的市场竞争中来，以一流的产品质量，优惠的产品价格，令人满意的销售服务，赢得您的支持与信赖。
+                                                    </p>
+                                                    <a href="index.html#" class="theme_button color1 topmargin_30">现在发现</a>
+                                                    <div class="bottom-corners"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+                    <li>
+                        <img src="/static/images/slide02.jpg" alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="slideExpandUp">
+                                                <div class="cornered-block">
+                                                    <p class="grey fontsize_20 text-uppercase">
+                                                        作为信息工程科技公司
+                                                    </p>
+                                                    <p class="big grey raleway text-uppercase bold">
+                                                        专业，诚信，共赢
+                                                    </p>
+                                                    <p class="grey fontsize_16">
+                                                        以高新技术与品牌打造企业，我们有着专业的团队和成熟的技术，立志成为行业的领头兵。我们本着“求实、高效、创新”的团队精神参与到激烈的市场竞争中来，以一流的产品质量，优惠的产品价格，令人满意的销售服务，赢得您的支持与信赖。
+                                                    </p>
+                                                    <a href="index.html#" class="theme_button color1 topmargin_30">现在发现</a>
+                                                    <div class="bottom-corners"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+                    <li>
+                        <img src="/static/images/slide03.jpg" alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="slideExpandUp">
+                                                <div class="cornered-block">
+                                                    <p class="grey fontsize_20 text-uppercase">
+                                                        作为信息工程科技公司
+                                                    </p>
+                                                    <p class="big grey raleway text-uppercase bold">
+                                                        专业，诚信，共赢
+                                                    </p>
+                                                    <p class="grey fontsize_16">
+                                                        以高新技术与品牌打造企业，我们有着专业的团队和成熟的技术，立志成为行业的领头兵。我们本着“求实、高效、创新”的团队精神参与到激烈的市场竞争中来，以一流的产品质量，优惠的产品价格，令人满意的销售服务，赢得您的支持与信赖。
+                                                    </p>
+                                                    <a href="index.html#" class="theme_button color1 topmargin_30">现在发现</a>
+                                                    <div class="bottom-corners"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+                    <li>
+                        <img src="/static/images/slide04.jpg" alt="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="slide_description_wrapper">
+                                        <div class="slide_description">
+                                            <div class="intro-layer" data-animation="slideExpandUp">
+                                                <div class="cornered-block">
+                                                    <p class="grey fontsize_20 text-uppercase">
+                                                        作为信息工程科技公司
+                                                    </p>
+                                                    <p class="big grey raleway text-uppercase bold">
+                                                        专业，诚信，共赢
+                                                    </p>
+                                                    <p class="grey fontsize_16">
+                                                        以高新技术与品牌打造企业，我们有着专业的团队和成熟的技术，立志成为行业的领头兵。我们本着“求实、高效、创新”的团队精神参与到激烈的市场竞争中来，以一流的产品质量，优惠的产品价格，令人满意的销售服务，赢得您的支持与信赖。
+                                                    </p>
+                                                    <a href="index.html#" class="theme_button color1 topmargin_30">现在发现</a>
+                                                    <div class="bottom-corners"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- eof .slide_description -->
+                                    </div>
+                                    <!-- eof .slide_description_wrapper -->
+                                </div>
+                                <!-- eof .col-* -->
+                            </div>
+                            <!-- eof .row -->
+                        </div>
+                        <!-- eof .container -->
+                    </li>
+
+                </ul>
+            </div>
+            <!-- eof flexslider -->
+        </section>
+
+        <section class="ls section_padding_110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 text-center">
+                        <div class="cornered-heading center-heading bottommargin_40">
+                            <h2 class="text-uppercase">我们的业务</h2>
+                            <span class="text-uppercase"></span>
+                        </div>
+                        <p>
+                            网络工程、监控安防工程、软件系统工程、楼宇门禁的技术开发与上门安装；土石方工程的设计与施工，建筑工程的设计与施工，装潢装潢工程的设计与施工，水电安装工程的设计与施工，数码产品、计算机及周边设备、打印机、复印机及其耗材的销售；办公设备的上门维修；投资兴办实业，国内贸易，货物及技术进出口。
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-left: -150px;margin-right: -150px;">
+                    <div class="col-md-3 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                        <div class="bg_teaser light_teaser with_shadow with_corners text-center topmargin_25">
+                            <div class="bg_overlay"></div>
+                            <img src="/static/images/teaser01.jpg" alt="">
+                            <div class="teaser_content">
+                                <div class="teaser text-center">
+                                    <div class="teaser_icon grey size_big">
+                                        <i class="flaticon-solar-panel"></i>
+                                    </div>
+                                    <h4 class="text-uppercase topmargin_25">工程</h4>
+                                    <hr class="divider_2_40 bottommargin_25">
+                                    <p class="darken-font-color">
+                                        机房工程是指为确保计算机机房（也称数据中心）的关键设备和装置能安全、稳定和可靠运行而设计配置的基础工程，还要为工作人员创造健康适宜的工作环境。
+                                    </p>
+                                    <a href="index.html#" class="theme_button color1">更多详细</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                        <div class="bg_teaser light_teaser with_shadow with_corners text-center topmargin_25 hovered hover ">
+                            <div class="bg_overlay"></div>
+                            <img src="/static/images/teaser02.jpg" alt="">
+                            <div class="teaser_content">
+                                <div class="teaser text-center">
+                                    <div class="teaser_icon grey size_big">
+                                        <i class="flaticon-wind-turbine-for-ecological-energy"></i>
+                                    </div>
+                                    <h4 class="text-uppercase topmargin_25">维护</h4>
+                                    <hr class="divider_2_40 bottommargin_25">
+                                    <p class="darken-font-color">
+                                        计算机维护是指对计算机的性能等进行维护措施，是提高计算机使用效率的重要措施。计算机维护主要体现在两个方面：一是硬件的维护；二是软件的维护。
+                                    </p>
+                                    <a href="index.html#" class="theme_button color1">更多详细</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                        <div class="bg_teaser light_teaser with_shadow with_corners text-center topmargin_25">
+                            <div class="bg_overlay"></div>
+                            <img src="/static/images/teaser03.jpg" alt="">
+                            <div class="teaser_content">
+                                <div class="teaser text-center">
+                                    <div class="teaser_icon grey size_big">
+                                        <i class="flaticon-hydro-power"></i>
+                                    </div>
+                                    <h4 class="text-uppercase topmargin_25">游戏</h4>
+                                    <hr class="divider_2_40 bottommargin_25">
+                                    <p class="darken-font-color">
+                                        以互联网为传输媒介，以游戏运营商服务器和用户计算机为处理终端，以游戏客户端软件为信息交互窗口取得虚拟成就有可持续性的个体性多人在线游戏。
+                                    </p>
+                                    <a href="index.html#" class="theme_button color1">更多详细</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8 col-sm-offset-2 col-md-offset-0">
+                        <div class="bg_teaser light_teaser with_shadow with_corners text-center topmargin_25">
+                            <div class="bg_overlay"></div>
+                            <img src="/static/images/teaser03.jpg" alt="">
+                            <div class="teaser_content">
+                                <div class="teaser text-center">
+                                    <div class="teaser_icon grey size_big">
+                                        <i class="flaticon-hydro-power"></i>
+                                    </div>
+                                    <h4 class="text-uppercase topmargin_25">软件开发</h4>
+                                    <hr class="divider_2_40 bottommargin_25">
+                                    <p class="darken-font-color">
+                                        服务外包和软件产业不仅能创造十分可观效益，对经济结构的调整优化、传统产业的改造提升和全面建设社会起到推动作用，是国民经济和发展的倍增器。
+                                    </p>
+                                    <a href="index.html#" class="theme_button color1">更多详细</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds section_padding_110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="cornered-heading bottommargin_55 media-topmargin">
+                            <h2 class="text-uppercase bottommargin_0">我们完成的优秀项目</h2>
+                        </div>
+                        <p>
+                            立足行业，开拓进取。诚信服务，以质量和信用为本。规范管理，引进先进、科学方法。加强合作，建立良好关系。开发新品，发展实业，优化产业结构。创立品牌，报效国家，为经济发展、环境保护和社会进步做出贡献。
+                        </p>
+                        <a href="gallery-fullwidth-4-cols.html" class="theme_button color1 border_button topmargin_25 bottommargin_0">查看所有项目</a>
+
+                        <div class="owl-carousel projects-carousel topmargin_40" data-margin="10" data-nav="true" data-items="6" data-themeclass="owl-theme" data-responsive-lg="2">
+
+                            <div class="vertical-item content-absolute">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/13.jpg" alt="">
+                                    <div class="media-links p-link">
+                                        <div class="links-wrap">
+                                            <i class="flaticon-arrows-2"></i>
+                                        </div>
+                                        <a class="abs-link" title="" href="index.html#project1" data-toggle="tab"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-absolute">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/12.jpg" alt="">
+                                    <div class="media-links p-link">
+                                        <div class="links-wrap">
+                                            <i class="flaticon-arrows-2"></i>
+                                        </div>
+                                        <a class="abs-link" title="" href="index.html#project2" data-toggle="tab"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-absolute">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/11.jpg" alt="">
+                                    <div class="media-links p-link">
+                                        <div class="links-wrap">
+                                            <i class="flaticon-arrows-2"></i>
+                                        </div>
+                                        <a class="abs-link" title="" href="index.html#project3" data-toggle="tab"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-absolute">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/10.jpg" alt="">
+                                    <div class="media-links p-link">
+                                        <div class="links-wrap">
+                                            <i class="flaticon-arrows-2"></i>
+                                        </div>
+                                        <a class="abs-link" title="" href="index.html#project4" data-toggle="tab"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-absolute">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/09.jpg" alt="">
+                                    <div class="media-links p-link">
+                                        <div class="links-wrap">
+                                            <i class="flaticon-arrows-2"></i>
+                                        </div>
+                                        <a class="abs-link" title="" href="index.html#project5" data-toggle="tab"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-absolute">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/08.jpg" alt="">
+                                    <div class="media-links p-link">
+                                        <div class="links-wrap">
+                                            <i class="flaticon-arrows-2"></i>
+                                        </div>
+                                        <a class="abs-link" title="" href="index.html#project6" data-toggle="tab"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- .owl-carousel -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tab-content projects-content">
+
+                            <div class="vertical-item gallery-item content-absolute ds tab-pane active" id="project1" role="tabpanel">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/13.jpg" alt="">
+                                    <div class="media-links">
+                                        <div class="links-wrap">
+                                            <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/static/images/gallery/13.jpg"></a>
+                                        </div>
+                                        <a href="gallery-single2.html" class="abs-link"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-meta">
+                                        <h4 class="text-uppercase">Praesent ultrices dui sed ornare</h4>
+                                        <p class="margin_0 grey">
+                                            <em>Solar System, Wind Turbines</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item gallery-item content-absolute ds tab-pane" id="project2" role="tabpanel">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/12.jpg" alt="">
+                                    <div class="media-links">
+                                        <div class="links-wrap">
+                                            <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/static/images/gallery/12.jpg"></a>
+                                        </div>
+                                        <a href="gallery-single2.html" class="abs-link"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-meta">
+                                        <h4 class="text-uppercase">Praesent ultrices dui sed ornare</h4>
+                                        <p class="margin_0 grey">
+                                            <em>Solar System, Wind Turbines</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item gallery-item content-absolute ds tab-pane" id="project3" role="tabpanel">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/11.jpg" alt="">
+                                    <div class="media-links">
+                                        <div class="links-wrap">
+                                            <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/static/images/gallery/11.jpg"></a>
+                                        </div>
+                                        <a href="gallery-single2.html" class="abs-link"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-meta">
+                                        <h4 class="text-uppercase">Praesent ultrices dui sed ornare</h4>
+                                        <p class="margin_0 grey">
+                                            <em>Solar System, Wind Turbines</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item gallery-item content-absolute ds tab-pane" id="project4" role="tabpanel">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/10.jpg" alt="">
+                                    <div class="media-links">
+                                        <div class="links-wrap">
+                                            <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/static/images/gallery/10.jpg"></a>
+                                        </div>
+                                        <a href="gallery-single2.html" class="abs-link"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-meta">
+                                        <h4 class="text-uppercase">Praesent ultrices dui sed ornare</h4>
+                                        <p class="margin_0 grey">
+                                            <em>Solar System, Wind Turbines</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item gallery-item content-absolute ds tab-pane" id="project5" role="tabpanel">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/09.jpg" alt="">
+                                    <div class="media-links">
+                                        <div class="links-wrap">
+                                            <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/static/images/gallery/09.jpg"></a>
+                                        </div>
+                                        <a href="gallery-single2.html" class="abs-link"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-meta">
+                                        <h4 class="text-uppercase">Praesent ultrices dui sed ornare</h4>
+                                        <p class="margin_0 grey">
+                                            <em>Solar System, Wind Turbines</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item gallery-item content-absolute ds tab-pane" id="project6" role="tabpanel">
+                                <div class="item-media">
+                                    <img src="/static/images/gallery/08.jpg" alt="">
+                                    <div class="media-links">
+                                        <div class="links-wrap">
+                                            <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/static/images/gallery/08.jpg"></a>
+                                        </div>
+                                        <a href="gallery-single2.html" class="abs-link"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-meta">
+                                        <h4 class="text-uppercase">Praesent ultrices dui sed ornare</h4>
+                                        <p class="margin_0 grey">
+                                            <em>Solar System, Wind Turbines</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ls section_padding_110 columns_margin_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-left to_animate" data-animation="fadeInLeft">
+                        <div class="cornered-heading bottommargin_60">
+                            <h2 class="text-uppercase">为什么选择我们</h2>
+                            <span class="text-uppercase">我们的专业服务</span>
+                        </div>
+                        <p>
+                            公司与各产品供应厂商有着密切的联系，并与其保持着良好的合作关系，能够稳定、成立以来，发挥自身优势，健全销售网络，注重企业形象，并且不断改善服务及技术支持的配套措施，赢得广大客户的一致好评。
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="teaser media inline-block topmargin_50 features-teaser to_animate" data-animation="pullDown">
+                            <div class="media-left media-middle">
+                                <div class="teaser_icon fontsize_36 grey with_background">
+                                    <i class="flaticon-signal"></i>
+                                </div>
+                            </div>
+                            <div class="media-body media-middle text-left">
+                                <h5 class="text-uppercase">
+                                    <a href="index.html#">最新技术</a>
+                                </h5>
+                                <p>Fusce efficitur, tortor ac commodo preti, tellus dui gravida ante memori.</p>
+                            </div>
+                        </div>
+                        <div class="teaser media inline-block topmargin_50 features-teaser to_animate" data-animation="pullDown">
+                            <div class="media-left media-middle">
+                                <div class="teaser_icon fontsize_36 grey with_background">
+                                    <i class="flaticon-renewable-energy"></i>
+                                </div>
+                            </div>
+                            <div class="media-body media-middle text-left">
+                                <h5 class="text-uppercase">
+                                    <a href="index.html#">一流服务</a>
+                                </h5>
+                                <p>Aenean malesuada mauris sed odio posu eleifend. Sed vehicula quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="teaser media inline-block topmargin_50 features-teaser to_animate" data-animation="pullDown">
+                            <div class="media-left media-middle">
+                                <div class="teaser_icon fontsize_36 grey with_background">
+                                    <i class="flaticon-plug"></i>
+                                </div>
+                            </div>
+                            <div class="media-body media-middle text-left">
+                                <h5 class="text-uppercase">
+                                    <a href="index.html#">创新理念</a>
+                                </h5>
+                                <p>Mauris eu egestas nunc. Nam pellen, libe sit amet imperdiet sodales.</p>
+                            </div>
+                        </div>
+                        <div class="teaser media inline-block topmargin_50 features-teaser to_animate" data-animation="pullDown">
+                            <div class="media-left media-middle">
+                                <div class="teaser_icon fontsize_36 grey with_background">
+                                    <i class="flaticon-hydro-power"></i>
+                                </div>
+                            </div>
+                            <div class="media-body media-middle text-left">
+                                <h5 class="text-uppercase">
+                                    <a href="index.html#">科学施工</a>
+                                </h5>
+                                <p>Duis at suscipit massa. Etiam quis mollis arcu. Integer sit amet ex eros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds section_padding_50 counters_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="teaser info-teaser text-center">
+                            <span class="info-icon info-project teaser_icon"></span>
+                            <br>
+                            <span class="counter highlight" data-from="0" data-to="2477" data-speed="1500">0</span>
+                            <p class="bold text-uppercase">完成的项目</p>
+                        </div>
+                        <div class="teaser info-teaser text-center">
+                            <span class="info-icon info-project teaser_icon"></span>
+                            <br>
+                            <span class="counter highlight" data-from="0" data-to="832" data-speed="1500">0</span>
+                            <p class="bold text-uppercase">满意的客户</p>
+                        </div>
+                        <div class="teaser info-teaser text-center">
+                            <span class="info-icon info-project teaser_icon"></span>
+                            <br>
+                            <span class="counter highlight" data-from="0" data-to="1858" data-speed="1500">0</span>
+                            <p class="bold text-uppercase">工作时间</p>
+                        </div>
+                        <div class="teaser info-teaser text-center">
+                            <span class="info-icon info-project teaser_icon"></span>
+                            <br>
+                            <span class="counter highlight" data-from="0" data-to="65" data-speed="1500">0</span>
+                            <p class="bold text-uppercase">我们的员工</p>
+                        </div>
+                        <div class="teaser info-teaser text-center">
+                            <span class="info-icon info-project teaser_icon"></span>
+                            <br>
+                            <span class="counter highlight" data-from="0" data-to="3" data-speed="1500">0</span>
+                            <p class="bold text-uppercase">办事处</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs section_padding_110 services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-6">
+                        <div class="cornered-heading bottommargin_60">
+                            <span class="text-uppercase">从计划到实现</span>
+                            <h2 class="text-uppercase">我们提供的服务</h2>
+                        </div>
+                        <p class="bottommargin_0">
+                            网络工程、监控安防工程、软件系统工程、楼宇门禁的技术开发与上门安装；土石方工程的设计与施工，建筑工程的设计与施工，装潢装潢工程的设计与施工，水电安装工程的设计与施工，数码产品、计算机及周边设备、打印机、复印机及其耗材的销售；办公设备的上门维修；投资兴办实业，国内贸易，货物及技术进出口
+                        </p>
+                        <div class="row columns_margin_0 service-teasers-row">
+                            <div class="col-sm-4 col-xs-6 to_animate" data-animation="pullUp">
+                                <div class="service-teaser with_corners hover_corners small_corners topmargin_30">
+                                    <div class="teaser_content">
+                                        <div class="teaser">
+                                            <div class="teaser_icon grey size_normal">
+                                                <i class="flaticon-light-bulb"></i>
+                                            </div>
+                                            <p class="text-uppercase raleway bold darklinks bottommargin_0">
+                                                <a href="index.html#">项目设计</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6 to_animate" data-animation="pullUp">
+                                <div class="service-teaser with_corners hover_corners small_corners topmargin_30">
+                                    <div class="teaser_content">
+                                        <div class="teaser">
+                                            <div class="teaser_icon grey size_normal">
+                                                <i class="flaticon-wrench"></i>
+                                            </div>
+                                            <p class="text-uppercase raleway bold darklinks bottommargin_0">
+                                                <a href="index.html#">技术应用</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6 to_animate" data-animation="pullUp">
+                                <div class="service-teaser with_corners hover_corners small_corners topmargin_30">
+                                    <div class="teaser_content">
+                                        <div class="teaser">
+                                            <div class="teaser_icon grey size_normal">
+                                                <i class="flaticon-cogwheel"></i>
+                                            </div>
+                                            <p class="text-uppercase raleway bold darklinks bottommargin_0">
+                                                <a href="index.html#">项目施工</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6 to_animate" data-animation="pullUp">
+                                <div class="service-teaser with_corners hover_corners small_corners topmargin_30">
+                                    <div class="teaser_content">
+                                        <div class="teaser">
+                                            <div class="teaser_icon grey size_normal">
+                                                <i class="flaticon-megaphone"></i>
+                                            </div>
+                                            <p class="text-uppercase raleway bold darklinks bottommargin_0">
+                                                <a href="index.html#">项目管理</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6 to_animate" data-animation="pullUp">
+                                <div class="service-teaser with_corners hover_corners small_corners topmargin_30">
+                                    <div class="teaser_content">
+                                        <div class="teaser">
+                                            <div class="teaser_icon grey size_normal">
+                                                <i class="flaticon-wind-turbine-for-ecological-energy"></i>
+                                            </div>
+                                            <p class="text-uppercase raleway bold darklinks bottommargin_0">
+                                                <a href="index.html#">技术支持</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6 to_animate" data-animation="pullUp">
+                                <div class="service-teaser with_corners hover_corners small_corners topmargin_30">
+                                    <div class="teaser_content">
+                                        <div class="teaser">
+                                            <div class="teaser_icon grey size_normal">
+                                                <i class="flaticon-glasses"></i>
+                                            </div>
+                                            <p class="text-uppercase raleway bold darklinks bottommargin_0">
+                                                <a href="index.html#">项目维护</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="ls section_padding_top_110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 text-center">
+                        <div class="cornered-heading center-heading bottommargin_40">
+                            <span class="text-uppercase">联系我们</span>
+                            <h2 class="text-uppercase">我们的联系方式</h2>
+                        </div>
+                        <p>
+                            运通101、运通201、特8内、特8外、302、323、323快、361、367、422、425、619、660、683、695、731、801、836、967、658路车可到达。
+                        </p>
+                    </div>
+                </div>
+                <div class="row with_shadow topmargin_40 to_animate" data-animation="fadeInDown">
+                    <div class="col-sm-4 col-lg-offset-1 col-lg-3 text-center">
+                        <div class="teaser inline-block topmargin_30 bottommargin_20">
+                            <div class="media-left">
+                                <div class="teaser_icon size_small grey">
+                                    <i class="flaticon-signs"></i>
+                                </div>
+                            </div>
+                            <div class="media-body text-left">
+                                <h5 class="text-uppercase fontsize_16 extra-bold">总公司</h5>
+                                <p>深圳市宝安区49区翻身路与海汇路交汇处华创达文化科技产业园F座506
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="teaser inline-block topmargin_30 bottommargin_20">
+                            <div class="media-left">
+                                <div class="teaser_icon size_small grey">
+                                    <i class="flaticon-phone-call"></i>
+                                </div>
+                            </div>
+                            <div class="media-body text-left">
+                                <h5 class="text-uppercase fontsize_16 extra-bold">电话</h5>
+                                <p>技术支持: 0755-25656895
+                                    <br>商务部门: 0755-85856952</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-3 text-center">
+                        <div class="teaser inline-block topmargin_30 bottommargin_20">
+                            <div class="media-left">
+                                <div class="teaser_icon size_small grey">
+                                    <i class="flaticon-mail"></i>
+                                </div>
+                            </div>
+                            <div class="media-body text-left">
+                                <h5 class="text-uppercase fontsize_16 extra-bold">邮箱</h5>
+                                <p class="greylinks">
+                                    <a href="index.html#">energy@support.com</a>
+                                    <br>
+                                    <a href="index.html#">energy@info.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="baidu_map" id="mapContainer" style="height: 280px;"></div>
+            <div>
+                <div class="container">
+                    <div class="row topmargin_35 contact-form-container to_animate" data-animation="fadeInUp">
+                        <div class="col-sm-12 text-center">
+                            <span class="text-uppercase">可以用留言的方式向我们发送你的需求</span>
+                            <h2 class="text-uppercase topmargin_5 bottommargin_25">联系我们</h2>
+
+                            <form class="contact-form row columns_margin_0" method="post" action="/">
+                                <div class="col-sm-6">
+                                    <div class="contact-form-name form-group">
+                                        <label for="name" class="sr-only">Full Name
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="您的姓名">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="contact-form-subject form-group">
+                                        <label for="email" class="sr-only">Email
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input type="text" aria-required="true" size="30" value="" name="subject" id="email" class="form-control" placeholder="您的邮箱">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="contact-form-phone form-group">
+                                        <label for="subject" class="sr-only">Subject
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="标题">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+
+                                    <div class="contact-form-message form-group">
+                                        <label for="message" class="sr-only">Message</label>
+                                        <textarea aria-required="true" rows="5" cols="45" name="message" id="message" class="form-control" placeholder="内容..."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="contact-form-submit topmargin_10 bottommargin_25">
+                                        <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button color1 margin_0">留言</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs section_padding_25">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="owl-carousel partners-carousel" data-items="9" data-responsive-lg="6" data-responsive-md="4" data-responsive-sm="3" data-responsive-xs="2" data-margin="0">
+                            <div class="partner-image partner1">
+                                <img src="/static/images/partners/1.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner2">
+                                <img src="/static/images/partners/2.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner3">
+                                <img src="/static/images/partners/3.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner4">
+                                <img src="/static/images/partners/4.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner5">
+                                <img src="/static/images/partners/5.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner6">
+                                <img src="/static/images/partners/6.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner1">
+                                <img src="/static/images/partners/1.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner2">
+                                <img src="/static/images/partners/2.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner3">
+                                <img src="/static/images/partners/3.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner4">
+                                <img src="/static/images/partners/4.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner5">
+                                <img src="/static/images/partners/5.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+                            <div class="partner-image partner6">
+                                <img src="/static/images/partners/6.png" alt="">
+                                <div class="media-links">
+                                    <a href="index.html#" class="abs-link"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="page_copyright ds ms parallax table_section section_padding_25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="darklinks fontsize_12">&copy;
+                            <span class="text-uppercase">怀宇信息工程有限公司 </span>1997-2016 |ICP证粤B2-20090191
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- eof #box_wrapper -->
+</div>
+<!-- eof #canvas -->
+
+<script src="/static/js/compressed.js"></script>
+<script src="/static/js/main.js"></script>
+<script>
+    var map = new BMap.Map("mapContainer");
+    var point = new BMap.Point(113.894168,22.576336)
+    map.centerAndZoom(point, 16);  // 初始化地图,设置中心点坐标和地图级别
+    //    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    //map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
+    //    map.enableScrollWheelZoom(false);     //开启鼠标滚轮缩放
+
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);               // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+</script>
+
+</body>
+
+</html>
