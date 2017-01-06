@@ -1,5 +1,8 @@
 package models
 
+// 模型参考
+// lavalite php cms
+
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -9,13 +12,13 @@ import (
 func init() {
 	mysqluser := beego.AppConfig.String("mysqluser")
 	mysqlpass := beego.AppConfig.String("mysqlpass")
-	mysqlurls:=beego.AppConfig.String("mysqlurls")
-	mysqldb:=beego.AppConfig.String("mysqldb")
+	mysqlurls := beego.AppConfig.String("mysqlurls")
+	mysqldb := beego.AppConfig.String("mysqldb")
 
-	orm.RegisterModel(new(Menu),)
+	orm.RegisterModel(new(Menu))
 
-	orm.RegisterDriver("mysql",orm.DRMySQL)
-	orm.RegisterDataBase("default","mysql",mysqluser+":"+mysqlpass+"@tcp("+mysqlurls+")/"+mysqldb+"?charset=utf8&loc=Asia%2FShanghai")
+	orm.RegisterDriver("mysql", orm.DRMySQL)
+	orm.RegisterDataBase("default", "mysql", mysqluser+":"+mysqlpass+"@tcp("+mysqlurls+")/"+mysqldb+"?charset=utf8&loc=Asia%2FShanghai")
 
 	orm.RunSyncdb("default", false, true)
 
